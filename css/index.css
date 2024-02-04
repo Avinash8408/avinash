@@ -1,0 +1,823 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ body {
+    padding: 0;
+    margin:0;
+    background-color: #fff;
+    
+ }
+div nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:12px 6%;
+}
+div nav ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: 700;
+    gap:36px;
+}
+div nav ul li{
+
+    list-style: none;
+}
+div nav ul li a{
+    text-decoration:none
+}
+
+.tool-button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:24px;
+}
+nav div a{
+    font-weight: 700px;
+    color: #ea512e;
+    text-decoration: none;
+}
+nav div button{ 
+    color: white;
+    background-color: #ea512e;
+    padding:16px 40px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+.hero{
+    height:650px;
+    background-color: #F1E7FF;
+    display: flex;
+    overflow:hidden;
+    align-items: center;
+    position:relative;
+}
+.toolbar {
+    display: none;
+}
+.toolbar span{
+    font-size:40px;
+}
+.toggler {
+    position:relative;
+}
+.toggler .dropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 250px;
+    background-color: white;
+    top:50px;
+    right:0;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2)
+}
+.toggler a {
+   font-size: 16px;
+   padding:8px; 
+}
+.toggler a:hover{
+    background-color: #1D2359;
+    color:white;
+}
+.toggler:hover .dropdown{
+    display: flex;
+}
+.hero .header {
+    width: 60%;
+    height: 100%;
+}
+.hero .circle {
+    width: 40%;
+    background: #FEF8F8;
+    height: 900px;
+    border-top-left-radius:50%;
+    border-bottom-left-radius:50%;
+    
+}
+.hero .circle .girl {
+    width:680px;
+    position: absolute;
+    top:80px;
+    bottom:10px;
+    right:25px
+}
+.cloud{
+    position:absolute;
+    bottom:-150px;
+}
+.hero .header{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 7%;
+    position:relative;
+}
+.hero .header h6 {
+    color:#ea5164;
+    font-size:16px;
+    padding: 0px;
+    margin: 0px;
+}
+.hero .header h1 {
+    color: #1B0238;
+    font-size: 55px;
+    padding: 0;
+    margin-bottom:20px;
+}
+.hero .header p {
+    color: gray;
+    padding:20px; 
+    padding-left: 0%;
+    padding-top:4px;
+    
+}
+ .hero .header .toolbar1 {
+    display: flex;
+    gap:16px;
+
+}
+ .hero .header .learn-more {
+    border:none;
+    background-color: #ea5164;
+    padding: 14px 28px;
+    color:white;
+    border-radius:8px;
+    font-size: 16px;
+}
+
+.hero .header .find-more {
+    border:none;
+    background-color: #f5890d;
+    padding: 14px 28px;
+    color:white;
+    border-radius:8px;
+    font-size:16px;
+}
+.hero .banner-1 {
+    position: absolute;
+    top:30px;
+    left:30px;
+    width:100px;
+    animation: move 3s infinite linear alternate;
+}
+.hero .banner-2{
+    position: absolute;
+    top:50px;
+    right:30px;
+    width:100px;
+    animation: move1 3s infinite linear alternate;
+
+}
+.hero .banner-3{
+    position: absolute;
+    bottom:100px;
+    left:20px;
+    width:100px;
+    animation: move2 3s infinite linear alternate;
+}
+.hero .banner-4{
+    position:absolute;
+    bottom:50px;
+    right: 30px;
+    width: 100px;
+    animation: move3 3s infinite linear alternate;
+}
+.child-section {
+    padding:100px 6%;
+    display: flex;
+    gap:50px;
+
+}
+.child-section div .owl {
+    width:120px;
+    top:-100px;
+    right:-30px;
+    animation: move4 3s infinite linear alternate;
+    
+}
+.child-section .title
+{
+    font-size:40px;
+    color:#180238;
+}
+.child-section .desc{
+    color: #6b6b84;
+    line-height: 40px;
+
+}
+.child-section .who-we-are {
+    font-family: 'Sacramento', cursive;
+    font-size: 24px;
+    font-family: 700px;
+    color:#EC592E;
+    margin-bottom: 10px;
+
+}
+
+.single-child{
+    width:596px;
+    height: 596px;
+    border-radius:50%;
+}
+.child-section .owl {
+    position:absolute;
+}
+.container {
+    width:50px;
+}
+.play-btn{
+    margin-left:20px;
+    
+}
+.child-section .list-box button {
+    background-color: #F5890D;
+    border:none;
+    width:32px;
+    height:32px;
+    font-weight: bold;
+    border-radius:50%;
+
+}
+.child-section .list-box {
+    display: flex;
+    padding-right:40px;
+    margin-bottom:40px;
+    gap:100px;
+}
+.button-btn{
+    padding:16px 36px;
+    background-color:#ea512e;
+    color: white;
+    border-radius:10px;
+    font-size:16px;
+    border: none;
+}
+.popular-classes {
+    padding: 100px 7%;
+    background-color: #fff;
+    padding-top: 32px;
+    position: relative;
+
+}
+.popular-classes .card-box {
+    display: flex;
+    gap:24px;
+    position: relative;
+    z-index: 1;
+
+}
+.popular-classes .card-box .card {
+    width:100%;
+    background: white;
+    box-shadow: 0 0 10px #ddd;
+    border-radius:8px;
+    position: reltive;
+}
+.school-btn {
+
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 32px;
+    font-family: 700px;
+    color:#EC592E;
+    
+}
+
+.popular-classes h1 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 50px;
+}
+.popular-classes .card-box .card-image {
+    width: 100%;
+}
+.popular-classes .card-box .card-content {
+    padding: 16px 32px;
+}
+.popular-classes .card-box .card-content h2 {
+    color:#ED8571;
+    padding: 0;
+    margin: 0;
+}
+.popular-classes .card-box .card-content p {
+    color: #6b6b84;
+    line-height: 24px;
+    
+}
+.popular-classes .card-box .card-content .info {
+     display: flex;
+     gap: 20px;
+     padding-bottom: 20px;
+     font-weight: bold;
+} 
+.popular-classes .card-box .card-content .class-btn {
+    padding: 16px  32px;
+    border: none;
+    border-radius:10px;
+    background-color:#ea512e;
+}
+.popular-classes .card-image:hover img {
+    transform: 1;
+    transition:all
+}
+.popular-classes .bottom-left {
+    position: absolute;
+    bottom: -139px;
+    left: -40px;
+    width: 300px;
+}
+.popular-classes .bottom-right {
+    position: absolute;
+    bottom: -120px;
+    right:-90px;
+    width:200px;
+}
+.main-div {
+    width:100%;
+}
+.teacher {
+    padding: 100px 2%;
+    width: 100%;
+    margin-top: 130px;
+    gap: 28px;
+    display: flex
+
+}
+
+.teacher .core {
+    font-family: 'Sacramento', cursive;
+    font-size: 24px;
+    font-family: 700px;
+    color:#EC592E;
+    
+
+}
+.teacher .title {
+    color:#1B0238;
+    font-size: 40px;
+}
+ .badge {
+    display: flex;
+    gap: 32px;
+    align-items: start;
+ }
+ .teacher .badge h4 {
+    padding: 0;
+    margin: 0;
+    font-size:24px;
+    color: #1B0238;
+ }
+
+ .teacher .badge p  {
+    color: green;
+    font-size: 14px;
+
+ }
+
+ .teacher .circle-one {
+    border: 1px solid #d3f5fe;
+    padding: 3px;
+    border-radius:50%;
+ }
+ .teacher .circle-one div {
+    background-color: #d3f5fe;
+    padding: 24px;
+    font: 20px;
+    border-radius: 50%;
+ }
+
+ .teacher .badge:hover .circle-one  {
+    border-color: #EA512E;
+ }
+
+ .teacher .badge:hover .circle-one div{
+    background: #EA512E;
+    color: white;
+ }
+ .teacher .circle-two {
+    border: 1px solid #d3f5fe;
+    padding: 3px;
+    border-radius:50%;
+ }
+ .teacher .circle-two div {
+    background-color: #fce0ad;
+    padding: 24px;
+    font: 20px;
+    border-radius: 50%;
+ }
+ .teacher .badge:hover .circle-two  {
+    border-color: #EA512E;
+ }
+.teacher .badge:hover .circle-two div{
+    background: #EA512E;
+    color: white;
+ }
+ .teacher .circle-three {
+    border: 1px solid #d3f5fe;
+    padding: 3px;
+    border-radius:50%;
+ }
+ .teacher .circle-three div {
+    background-color: #fbc9d5;
+    padding: 24px;
+    font-size: 20px;
+    border-radius: 50%;
+ }
+ .teacher .badge:hover .circle-three  {
+    border-color: #EA512E;
+ }
+.teacher .badge:hover .circle-three div{
+    background: #EA512E;
+    color: white;
+ }
+ 
+.badge-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.team {
+    padding: 100px 36px;
+    background-color: #FAF7F2;
+    width: 100%;
+    margin: 0;
+}
+.team .container {
+    display: flex;
+    gap:24px;
+    align-items: center;
+    margin-left: 10px;
+    
+}
+.team .container h2 {
+    color:#1B0238;
+    font-size:28px;
+    margin-bottom:4px;
+    margin-left:70px;
+}
+.team .container p {
+    color:#ED6C4E;
+    font-weight:500;
+    padding: 0;
+    margin: 0;
+    margin-left:70px;
+
+}
+.core-btn {
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 24px;
+    font-family: 700px;
+    color:#EC592E;
+    
+}
+.meet-btn {
+    font-size: 45px;
+    color:#1B0238;
+    padding:0;
+    margin: 0;
+    margin-bottom:60px;
+}
+.team .container img {
+    
+    width: 260px;
+
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .feedback{
+    padding:100px 10%;
+    height:560px;
+    margin-top:0px;
+
+  }
+  .feedback, .title {
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 18px;
+    font-family: 700px;
+    color:#EC592E;
+    
+  }
+  .feedback, .subtitle{
+    font-size:30px;
+    font-weight:400px;
+    color:#1B0238;
+    margin-top:15px;
+    margin-bottom:45px;
+  }
+  .feedback .swiper .circle-box{
+    width: 100%;
+  }
+  .feedback .swiper .circle {
+    
+    height:350px;
+    background-color:#FEE9CA;
+    border-radius:50%;
+  }
+  
+  
+.incoming-events {
+   
+    background: url('../images/event-bg.jpg');
+    background-size:cover;
+    margin:50px 0;
+    padding-top:90px;
+    padding-bottom:90px;
+
+} 
+.incoming-events .title {
+    font-size:24px;
+    text-align: center;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 18px;
+    font-family: 700px;
+    color: white;
+    
+}
+.incoming-events .subtitle {
+    font-size:50px;
+    text-align: center;
+    color:white;
+}
+.incoming-events .card-box {
+    
+    width: 80%;
+    height:300px;
+    background: white;
+    border-radius:10px;
+    margin-left:10%;
+    margin-top:10px;
+     
+}
+.incoming-events .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 30px;
+    margin-right: 80px;
+    
+}
+.incoming-events .card .content {
+    font-size:20px;
+    margin-bottom: 35px;
+}
+.incoming-events .card .calender {
+    font-size:40px;
+    color:#EA512E;
+    margin-bottom:50px;
+    
+}
+.incoming-events .card .calender p{
+    font-size:20px;
+    color:#EA512E;
+}
+.latest-news{
+    padding:100px 10%;
+    display:flex;
+    justify-content:space-between;
+
+}
+.latest-news .subtitle{
+    font-family: 'Sacramento', cursive;
+    font-size: 22px;
+    font-weight: 700;
+    color:#EC592E;
+    align-items: center;
+}
+.latest-news .title {
+    font-size: 50px;
+    color:#1B0238;
+    text-align: center;
+    display: flex;
+    flex-direction: center;
+    
+}
+.latest-news .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 200px;
+    padding-left:50px;
+}
+
+
+ .latest-news .container .card-content {
+    background-color:#fdeee9;
+    padding: 24px;
+}
+.latest-news .container .card-content h3 {
+    font-size:22px;
+    color:#1B0238;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: center;
+}
+.latest-news .container .card-content p {
+ color:#686884;
+}
+.latest-news .container .card-content button {
+    border:none;
+    padding:16px 48px;
+    background: #ea512e;
+    border-radius:8px;
+    font-size:16px;
+    color:white;
+}
+.latest-news .container .card-content .action {
+    display: flex;
+    gap:30px;
+
+}
+.footer{
+    width: 100%;
+    height:480px;
+    background:url("../images/footer-bg.jpg");
+    background-size: cover;
+    background-position:center;
+
+}
+.footer .dark{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+.footer .dark .card-first{
+    width:100%;
+}
+@keyframes move{
+    0%{
+      left: 30px;
+    }
+    100%{
+        left: 80px;
+    }
+}
+@keyframes move1{
+    0%{
+        right: 30px;
+    }
+    100%{
+        right:80px;
+    }
+}
+@keyframes move2 {
+    0%{
+        left: 20px;
+    }
+    100%{
+       left: 80px;
+    }
+}
+@keyframes move3{
+    0%{
+        right:30px;
+    }
+    100%{
+        right: 80px;
+    }
+}
+
+@keyframes move4{
+    0%{
+        right: -30px;
+    }
+    100%{
+        right:-80px;
+
+    }
+}
+@media(max-width: 768px)
+{
+    .toolbar{
+        display: flex;
+    }
+    .tool-button{
+        display: none;
+    }
+   div nav ul {
+        display: none;
+    }
+    div nav{
+        padding:8px 3%;
+    }
+    .logo {
+        width:100px;
+    }
+    .hero {
+        flex-direction:column;
+        padding: 0;
+    }
+    .hero .header {
+        flex-direction: column;
+    }
+    .hero .circle {
+        background: transparent;
+        width: 100%;
+        border-radius: 0;
+
+    }
+    .hero .cloud {
+        display: none;
+    }
+    .hero .circle .girl{
+        width: 100px;
+        position: unset;
+    }
+    .hero .banner-1, .hero .banner-2, .hero .banner-3, .hero .banner-4{
+        display: none;
+   } 
+   .hero .header {
+        align-items: center;
+        text-align: center;
+    
+        width: 100%;
+        padding: 24px;
+   }
+   .hero .header h1, .hero .header h6 {
+        margin: 0;
+   }
+   .hero .header h1 {
+        font-size: 24px;
+        margin-top: 16px;;
+   }
+   .hero .header p {
+        padding-right: 0;
+   }
+   .header .circle {
+    width: 100px;
+   }
+   .child-section div .owl {
+    display: none;
+  }
+   .child-section{
+      flex-direction: column;
+      margin-top:-30px;
+      margin-bottom: -50px;
+      gap: 05px;
+    }
+    .popular-classes .card-box {
+        flex-direction: column;
+    }
+    .popular-classes .bottom-left {
+        display: none;
+    }
+    .popular-classes .bottom-right {
+        display: none;
+    }a
+    .teacher {
+        display: flex;
+        flex-direction: column;
+    }
+    .team .container {
+        display: flex;
+        flex-direction: column;
+        margin-left:250px;
+        height:auto
+    } 
+    .team .container img {
+        width:500px;
+    }
+    .team .container h2 {
+        margin-left:170px;
+        padding:15px;
+       
+    }
+    .team .container p {
+        margin-left:220px;
+        margin-bottom:20px;
+    }
+    .incoming-events {
+        padding:20px;
+        height:100%;
+        
+    }
+    .incoming-events .card{
+       
+        flex-direction: column;
+
+    }
+    .incoming-events .card .content{
+        display;
+    }
+
+
+}
